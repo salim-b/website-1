@@ -38,7 +38,7 @@ const Hero = () => {
   const titleContent = (
     <span className="lg:hidden">
       <BlinkingText parentElement={titleEntry?.target} shouldAnimationStart={isAnimationPlaying}>
-        {'Build on Serverless Postgres'.split('').map((letter, index) => (
+        {'Serverless Postgres'.split('').map((letter, index) => (
           <span
             className={clsx('animate-text-blink', letter === '/' && 'text-secondary-2')}
             style={{ animationPlayState: 'paused' }}
@@ -82,7 +82,7 @@ const Hero = () => {
             {titleContentLg}
           </Heading>
           <p className="t-xl mt-7 max-w-[550px] text-white 2xl:mt-6 2xl:max-w-[480px] xl:mt-5 xl:max-w-[456px] lg:mx-auto lg:max-w-[414px]">
-            Launches Postres instantly. Delights while building an app. Rock solid in production.
+            Launches Postgres instantly. Delights while building an app. Rock solid in production.
           </p>
 
           <p className="t-xl mt-7 max-w-[550px] text-white 2xl:mt-6 2xl:max-w-[480px] xl:mt-5 xl:max-w-[456px] lg:mx-auto lg:max-w-[414px]">
