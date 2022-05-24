@@ -38,7 +38,7 @@ const Hero = () => {
   const titleContent = (
     <span className="lg:hidden">
       <BlinkingText parentElement={titleEntry?.target} shouldAnimationStart={isAnimationPlaying}>
-        {'Serverless Postgres'.split('').map((letter, index) => (
+        {'Build on Serverless Postgres'.split('').map((letter, index) => (
           <span
             className={clsx('animate-text-blink', letter === '/' && 'text-secondary-2')}
             style={{ animationPlayState: 'paused' }}
@@ -82,8 +82,11 @@ const Hero = () => {
             {titleContentLg}
           </Heading>
           <p className="t-xl mt-7 max-w-[550px] text-white 2xl:mt-6 2xl:max-w-[480px] xl:mt-5 xl:max-w-[456px] lg:mx-auto lg:max-w-[414px]">
-            The multi-cloud fully managed Postgres with a generous free tier.
-            We separated storage and compute to offer autoscaling, branching, and bottomless storage.
+            Launches Postres instantly. Delights while building an app. Rock solid in production.
+          </p>
+
+          <p className="t-xl mt-7 max-w-[550px] text-white 2xl:mt-6 2xl:max-w-[480px] xl:mt-5 xl:max-w-[456px] lg:mx-auto lg:max-w-[414px]">
+            Neon is an open source alternative to AWS Aurora Postgres. We separated storage and compute to offer autoscaling, branching, and bottomless storage.
           </p>
           <Button
             id="hero-button"
